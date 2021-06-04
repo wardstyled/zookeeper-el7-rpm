@@ -1,7 +1,3 @@
-# Repository is looking for new owner/maintainer
-
-I'm no longer running Kafka/Zookeeper as part of my daily job for quite some time, and in general moved away from building my own RPMs and operating services.
-
 # zookeeper-redhat7-rpm
 A set of scripts to package zookeeper into an rpm.
 Requires CentOS/RedHat 7.
@@ -26,11 +22,9 @@ Resulting RPM will be avaliable at $(shell pwd)/RPMS/x86_64
     sudo systemctl start zookeeper
     sudo systemctl enable zookeeper
 
-Zookeeper shell is available via /usr/local/bin/zkcli or just zkcli since /usr/local/bin is usually in the $PATH.
-
 # Default locations
 
-binaries: /opt/zookeeper  
-data:     /var/lib/zookeeper  
-logs:     /var/log/zookeeper  
-configs:  /etc/zookeeper, /etc/sysconfig/zookeeper  
+binaries: /opt/zookeeper/bin
+data:     /opt/zookeeper/data 
+logs:     /opt/zookeeper/logs  
+configs:  /opt/zookeeper/conf, /etc/sysconfig/zookeeper  
