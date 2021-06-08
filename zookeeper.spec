@@ -24,7 +24,7 @@ Source6: %{name}.sysconfig
 BuildRoot: %{_tmppath}/%{name}-%{version}-root
 Prefix: %{_prefix}
 Vendor: Apache Software Foundation
-Packager: Ivan Dyachkov <ivan.dyachkov@klarna.com>
+Packager: Ivan Yankov <is.yankov@jet.su>
 Provides: %{name}
 BuildRequires: systemd
 Requires(post): systemd
